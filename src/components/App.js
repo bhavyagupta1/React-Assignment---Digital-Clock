@@ -37,7 +37,7 @@ class App extends Component {
 
         const AmOrPm = (hours >= 12 ? "PM" : "AM");
         const twlveHrFomt = hours  > 12 ? hours-12 : hours;
-        const hrsStr = this.padnumTwoDig(twlveHrFomt);
+        const hrsStr = (twlveHrFomt);
         const minStr = this.padnumTwoDig(minutes);
         const secStr = this.padnumTwoDig(seconds);
 
@@ -45,8 +45,8 @@ class App extends Component {
         return tymString;
     }
     padnumTwoDig(num){
-        return num;
-       // return ((num<10 ? ("0") : "") + num);
+        // return num;
+       return ((num<10 ? ("0") : "") + num);
     }
 }
 
