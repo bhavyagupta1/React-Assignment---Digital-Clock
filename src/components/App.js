@@ -45,7 +45,8 @@ class App extends Component {
         return tymString;
     }
     padnumTwoDig(num){
-        return ((num<10 ? ("0") : "") + num);
+        return num;
+       // return ((num<10 ? ("0") : "") + num);
     }
 }
 
